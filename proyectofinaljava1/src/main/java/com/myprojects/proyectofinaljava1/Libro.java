@@ -16,8 +16,8 @@ public class Libro extends Producto {
         this.editorial = editorial;
     }
 
-    public Libro(String titulo, String autor, String editorial, String codigo, double precioCompra, double precioVenta) {
-        super(codigo, precioCompra, precioVenta);
+    public Libro(String titulo, String autor, String editorial, String codigo, double precioCompra, double precioVenta, String fechapublicacion, int cantidad) {
+        super(codigo, precioCompra, precioVenta, fechapublicacion, cantidad);
         this.titulo = titulo;
         this.autor = autor;
         this.editorial = editorial;

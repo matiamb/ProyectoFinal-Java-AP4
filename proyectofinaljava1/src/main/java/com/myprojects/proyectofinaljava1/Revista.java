@@ -14,8 +14,8 @@ public class Revista extends Producto{
         this.editor = editor;
     }
 
-    public Revista(String nombre, String editor, String codigo, double precioCompra, double precioVenta) {
-        super(codigo, precioCompra, precioVenta);
+    public Revista(String nombre, String editor, String codigo, double precioCompra, double precioVenta, String fechapublicacion, int cantidad) {
+        super(codigo, precioCompra, precioVenta, fechapublicacion, cantidad);
         this.nombre = nombre;
         this.editor = editor;
     }
