@@ -70,6 +70,17 @@ public class Itemsalcarrito {
         else{ return true; }        
     }
     
+    public void mostrarItem(){ // necesito saber si es un libro o una revista
+        if (libro != null) {
+            System.out.println("Producto: " + libro.getTitulo());
+            System.out.println("Cantidad: " + cantidadcompra);
+        }
+        else if (revista != null){
+            System.out.println("Producto: " + revista.getNombre());
+            System.out.println("Cantidad: " + cantidadcompra);
+        }
+    }
+    
     public double precio(){
         double precio = 0;
         if(this.libro != null && fisico == true){
