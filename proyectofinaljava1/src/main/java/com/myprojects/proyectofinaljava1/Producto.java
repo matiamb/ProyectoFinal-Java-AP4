@@ -18,5 +18,5 @@ public abstract class Producto {
         this.cantidadstock = cantidadstock;
     }
     
-    public abstract double calcularpreciovta();
+    public abstract boolean queSoy();
 }
