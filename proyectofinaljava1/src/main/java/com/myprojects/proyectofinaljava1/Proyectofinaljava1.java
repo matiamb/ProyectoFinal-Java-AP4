@@ -56,5 +56,14 @@ public class Proyectofinaljava1 {
         System.out.println("Item al carrito:");
         top.mostrarItem();
         System.out.println("Precio: " + top.precio());
+        
+        System.out.println("------------------------------------------");
+        
+        System.out.println("Carrito");
+        
+        Carrito carrito = new Carrito();
+        carrito.agregarAlCarrito(top);
+        carrito.agregarAlCarrito(harry);
+        System.out.println("El precio total a abonar es de: "+carrito.precioTotal()+ " pesos.");
     }
 }
