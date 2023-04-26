@@ -42,4 +42,18 @@ public class Carrito {
             }
         }
     }
+    
+    public double precioTotal(){
+        double precio = 0;
+        if (items.isEmpty()){
+            System.out.println("El carrito esta vacio");
+        }
+        
+        else{
+            for(Itemsalcarrito i : items){
+                precio += i.precio();
+            }
+        }
+        return precio;
+    }
 }
