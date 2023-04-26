@@ -59,9 +59,18 @@ public class Revista extends Producto{
     public void setFechapublicacion(String fechapublicacion) {
         this.fechapublicacion = fechapublicacion;
     }
+    
+    public int getCantidadstock() {
+        return cantidadstock;
+    }
+
+    public void setCantidadstock(int cantidad) {
+        this.cantidadstock = cantidad;
+    }
 
     @Override
-    public double calcularpreciovta() {
+    public boolean queSoy() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+
 }
