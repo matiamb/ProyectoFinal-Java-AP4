@@ -38,7 +38,7 @@ public class Carrito {
         
         else{
             for(Itemsalcarrito i : items){
-                System.out.println(i);
+                System.out.println(i);;
             }
         }
     }
