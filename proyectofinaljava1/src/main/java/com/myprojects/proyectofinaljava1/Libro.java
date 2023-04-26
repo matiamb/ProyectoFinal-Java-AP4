@@ -16,8 +16,8 @@ public class Libro extends Producto {
         this.editorial = editorial;
     }
 
-    public Libro(String titulo, String autor, String editorial, String codigo, double precioCompra, double precioVenta, String fechapublicacion, int cantidad) {
-        super(codigo, precioCompra, precioVenta, fechapublicacion, cantidad);
+    public Libro(String titulo, String autor, String editorial, String codigo, double precioCompra, String fechapublicacion, int cantidadstock) {
+        super(codigo, precioCompra, fechapublicacion, cantidadstock);
         this.titulo = titulo;
         this.autor = autor;
         this.editorial = editorial;
@@ -62,16 +62,22 @@ public class Libro extends Producto {
     public void setPrecioCompra(double precioCompra) {
         this.precioCompra = precioCompra;
     }
-
-    public double getPrecioVenta() {
-        return precioVenta;
+    
+    public String getfechapublicacion() {
+        return fechapublicacion;
     }
 
-    public void setPrecioVenta(double precioVenta) {
-        this.precioVenta = precioVenta;
+    public void setfechapublicacion(String fecha) {
+        this.fechapublicacion = fecha;
     }
-    
-    
+
+    public int getCantidadstock() {
+        return cantidadstock;
+    }
+
+    public void setCantidadstock(int cantidad) {
+        this.cantidadstock = cantidad;
+    }
 
     @Override
     public double calcularpreciovta() {

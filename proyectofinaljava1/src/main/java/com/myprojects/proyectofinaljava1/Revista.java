@@ -14,8 +14,8 @@ public class Revista extends Producto{
         this.editor = editor;
     }
 
-    public Revista(String nombre, String editor, String codigo, double precioCompra, double precioVenta, String fechapublicacion, int cantidad) {
-        super(codigo, precioCompra, precioVenta, fechapublicacion, cantidad);
+    public Revista(String nombre, String editor, String codigo, double precioCompra, String fechapublicacion, int cantidad) {
+        super(codigo, precioCompra, fechapublicacion, cantidad);
         this.nombre = nombre;
         this.editor = editor;
     }
@@ -50,14 +50,6 @@ public class Revista extends Producto{
 
     public void setPrecioCompra(double precioCompra) {
         this.precioCompra = precioCompra;
-    }
-
-    public double getPrecioVenta() {
-        return precioVenta;
-    }
-
-    public void setPrecioVenta(double precioVenta) {
-        this.precioVenta = precioVenta;
     }
 
     public String getFechapublicacion() {

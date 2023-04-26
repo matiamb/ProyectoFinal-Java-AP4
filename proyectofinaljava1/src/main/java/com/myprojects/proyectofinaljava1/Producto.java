@@ -5,19 +5,17 @@ package com.myprojects.proyectofinaljava1;
 public abstract class Producto {
     protected String codigo;
     protected double precioCompra;
-    protected double precioVenta;
     protected String fechapublicacion;
-    public int cantidad;
+    public int cantidadstock;
 
     public Producto() {
     }
 
-    public Producto(String codigo, double precioCompra, double precioVenta, String fechapublicacion, int cantidad) {
+    public Producto(String codigo, double precioCompra, String fechapublicacion, int cantidadstock) {
         this.codigo = codigo;
         this.precioCompra = precioCompra;
-        this.precioVenta = precioVenta;
         this.fechapublicacion = fechapublicacion;
-        this.cantidad = cantidad;
+        this.cantidadstock = cantidadstock;
     }
     
     public abstract double calcularpreciovta();
