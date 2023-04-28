@@ -6,8 +6,9 @@ import java.util.ArrayList;
 
 public class Carrito {
     public ArrayList<Itemsalcarrito> items;    
-
+    
     public Carrito() {
+        items = new ArrayList<>();
     }
 
     public Carrito(ArrayList<Itemsalcarrito> item) {
@@ -23,7 +24,6 @@ public class Carrito {
     }
     
     public void agregarAlCarrito(Itemsalcarrito ic){
-        items = new ArrayList<Itemsalcarrito>();
         items.add(ic);
     }
     
@@ -37,8 +37,13 @@ public class Carrito {
         }
         
         else{
-            for(Itemsalcarrito i : items){
-                System.out.println(i);;
+            for(Itemsalcarrito i : items){              
+                /*System.out.println(i.getLibro().getTitulo());
+                System.out.println(i.getRevista().getNombre());*/
+                if (i.getLibro() != null){
+                    System.out.println(i.getLibro().getTitulo());
+                }
+                else {System.out.println(i.getRevista().getNombre());}
             }
         }
     }
@@ -52,6 +57,8 @@ public class Carrito {
         else{
             for(Itemsalcarrito i : items){
                 precio += i.precio();
+                System.out.println(i.precio());
+                System.out.println(precio);
             }
         }
         return precio;
