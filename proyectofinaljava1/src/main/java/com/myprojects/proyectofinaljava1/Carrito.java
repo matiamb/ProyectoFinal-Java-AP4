@@ -25,10 +25,12 @@ public class Carrito {
     
     public void agregarAlCarrito(Itemsalcarrito ic){
         items.add(ic);
+        System.out.println("Item agregado con exito");
     }
     
     public void quitardelCarrito(Itemsalcarrito ic){
         items.remove(ic);
+        System.out.println("Item quitado del carrito");
     }
     
     public void mostrarCarrito(){
@@ -56,9 +58,7 @@ public class Carrito {
         
         else{
             for(Itemsalcarrito i : items){
-                precio += i.precio();
-                System.out.println(i.precio());
-                System.out.println(precio);
+                precio += i.precio();                
             }
         }
         return precio;
